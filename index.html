@@ -93,7 +93,7 @@
 
       <!-- Section output -->
       <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
-      <div id="todo-output" class="output"></div>
+      <ul id="todo-output" class="output"></ul>
     </div>
   </div>
 
@@ -108,7 +108,7 @@
     // Fungsi yang digunakan untuk menambahkan tulisan
     // Jangan ubah cara deklarasi fungsinya, cukup isi saja
     function fnClickHandler(toDoItem) {
-      const li = document.createElement("p");
+      const li = document.createElement("li");
       li.textContent = toDoItem;
       output.appendChild(li);
       input.value = null;
